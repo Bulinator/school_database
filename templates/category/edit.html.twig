@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Update category' %}
+
+{% block body %}
+    <div class="widget rounded">
+        <div class="widget-title">
+            <i class="fas fa-stream text-info fa-fw"></i>
+            Edit category: <span class="text-info">{{ category.name }}</span>
+        </div>
+    </div>
+
+    <div class="mt-2">
+        {{ include('fragments/form/category/_form.html.twig', { 'button': 'Update' }) }}
+    </div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Create lecture' %}
+
+{% block body %}
+    <div class="widget rounded">
+        <div class="widget-title">
+            <i class="fas fa-stream text-info fa-fw"></i>
+            Create new lecture
+        </div>
+    </div>
+
+    <div class="mt-2">
+        {{ include('fragments/form/lecture/_form.html.twig') }}
+    </div>
+{% endblock %}

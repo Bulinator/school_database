@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+    </head>
+    <body>
+        {{ include('fragments/navigation/_navbar.html.twig') }}
+
+        <main class="container-fluid" role="main">
+            {{ include('fragments/message/flash/_alert.html.twig') }}
+
+            {% block body %}{% endblock %}
+        </main>
+
+        <div class="back-to-top">
+            <i class="fas fa-2x fa-arrow-circle-up" data-toggle="tooltip" title="ToP"></i>
+        </div>
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+    </body>
+</html>

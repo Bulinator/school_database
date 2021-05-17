@@ -1,0 +1,19 @@
+{% for message in app.flashes('success') %}
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+        <i class="far fa-calendar-check fa-fw text-info text-bold"></i>
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+{% endfor %}
+
+{% for message in app.flashes('error') %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <i class="fas fa-exclamation-triangle fa-fw text-danger text-bold faa-flash animated"></i>
+        {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+{% endfor %}

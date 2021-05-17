@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Create category' %}
+
+{% block body %}
+    <div class="widget rounded">
+        <div class="widget-title">
+            <i class="fas fa-stream text-info fa-fw"></i>
+            Create new category
+        </div>
+    </div>
+
+    <div class="mt-2">
+        {{ include('fragments/form/category/_form.html.twig') }}
+    </div>
+{% endblock %}

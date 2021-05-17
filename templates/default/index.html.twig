@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Dashboard' %}
+
+{% block body %}
+   <div class="widget rounded shadow">
+       <a href="{{ path('category.index') }}" class="btn btn-primary btn-ripple btn-sm">
+           <i class="fas fa-list-ul fa-fw"></i>
+            CATEGORIES
+       </a>
+       {% if categories %}
+           <a href="{{ path('lecture.index') }}" class="btn btn-primary btn-ripple btn-sm">
+               <i class="fas fa-chalkboard-teacher fa-fw"></i>
+               LECTURES
+           </a>
+           {% if lectures %}
+               <a href="{{ path('user.index') }}" class="btn btn-primary btn-ripple btn-sm">
+                   <i class="fas fa-users fa-fw"></i>
+                   USERS
+               </a>
+           {% endif %}
+       {% endif %}
+   </div>
+
+    <div class="widget pb-0">
+        {{ form_start(form) }}
+            {{ form_row(form.lecture) }}
+        {{ form_end(form) }}
+    </div>
+
+    {% if results is defined and results %}
+        <div class="widget">
+            <div class="widget-title">
+                <i class="fas fa-angle-double-right fa-fw"></i>
+                {{ results.name|upper }}
+                <span class="float-right">
+                    <i class="fas fa-exclamation"></i>
+                    {{ results.users|length }}
+                </span>
+            </div>
+        </div>
+        <table class="table table-bordered table-header" id="dtBasic">
+            <thead>
+                <tr>
+                    <th>LASTNAME</th>
+                    <th>FIRSTNAME</th>
+                    <th>BIRTHDATE</th>
+                    <th>EID</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for user in results.users %}
+                    <tr>
+                        <td>{{ user.lastname }}</td>
+                        <td>{{ user.firstname }}</td>
+                        <td>
+                            {% if user.birthdate %}
+                                {{ user.birthdate|date('Y-m-d') }}
+                            {% else %}
+                                <i class="fas fa-minus fa-fw"></i>
+                                <span class="d-none">missing</span>
+                            {% endif %}
+
+                        </td>
+                        <td>
+                            {% if user.eid %}
+                                {{ user.eid }}
+                            {% else %}
+                                <i class="fas fa-minus fa-fw"></i>
+                                <span class="d-none">missing</span>
+                            {% endif %}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock %}

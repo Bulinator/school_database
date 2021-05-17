@@ -1,0 +1,31 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~font-awesome-animation';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-select/sass/bootstrap-select';
+@import '~flatpickr/dist/themes/material_blue.css';
+
+@import '_styles/_typography';
+@import '_styles/_color';
+
+@import '_components/navbar';
+
+@import '_styles/_form';
+@import '_styles/_table';
+@import '_styles/_widget';
+@import '_styles/_empty';
+
+html, body {
+    position: relative;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 80px;
+    background: $bgColor;
+}

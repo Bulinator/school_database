@@ -1,0 +1,17 @@
+<div class="widget">
+    {{ form_start(form) }}
+    {{ form_errors(form.name) }}
+    {{ form_widget(form.name) }}
+    <small id="categoryNameHelp" class="form-text text-muted">Characters allowed [0-9] [A-Z] [a-z] [-_]</small>
+    <div class="text-right mt-2">
+        <a href="{{ path('category.index') }}" class="btn btn-warning">
+            <i class="fas fa-angle-double-left"></i>
+            Cancel
+        </a>
+        <button class="btn btn-primary">
+            <i class="fas fa-plus-square"></i>
+            {{ button|default('Create') }}
+        </button>
+    </div>
+    {{ form_end(form) }}
+</div>

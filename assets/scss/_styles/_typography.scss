@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 mai 2018, 10:59:34
+    Author     : Your Name <Geoffrey Bulot at geoffrey.bulot@gmail.com>
+*/
+
+/*
+ *  Custom font:  roboto-regular - latin
+ */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../font/fonts-google/roboto-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../../font/fonts-google/roboto-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../../font/fonts-google/roboto-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../../font/fonts-google/roboto-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+        /* url('../../font/fonts-google/roboto-v15-latin-regular.ttf') format('truetype'),  Safari, Android, iOS */
+        url('../../font/fonts-google/roboto-v15-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+html,
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 120em) {
+    html {
+        font-size: 15px;
+    }
+}
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    html {
+        font-size: 13px;
+    }
+    
+    td {
+        font-size: 0.8rem !important;
+    }
+    
+    .calshift {
+        font-weight: 600;
+        font-size: .8rem !important;        
+    }    
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    html {
+        font-size: 13px;
+    }      
+    
+    td {
+        font-size: 0.8rem !important;
+    }
+
+    .calshift {
+        font-weight: 600;
+        font-size: .8rem !important;        
+    }
+}
+
+// Medium devices (tablets, 48em and up)
+// 
+// At this point you have overridden Bootstraps rem's and are
+// into module based font sizes should you require it. 
+//
+// I took a while over this change because I felt that there
+// is no reason why I cant use a modified scale on another 
+// device size. So I did, the headings have now taken on
+// "Perfect Fourth" and the dislpay-* has been put to the
+// Bootstrap defaults.
+//
+//------------------------------------------------------------//
+@media (min-width: 48em) {
+    h1 {
+        font-size: 2.441em;
+    }
+    h2 {
+        font-size: 1.953em;
+    }
+    h3 {
+        font-size: 1.563em;
+    }
+    h4 {
+        font-size: 1.25em;
+    }
+    .display-1 {
+        font-size: 6em;
+    }
+    .display-2 {
+        font-size: 5.5em;
+    }
+    .display-3 {
+        font-size: 4.5em;
+    }
+    .display-4 {
+        font-size: 3.5em;
+    }
+}
+
+label {
+    font-size: 0.9rem;
+}

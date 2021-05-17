@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title 'Edit user' %}
+
+{% block body %}
+    <div class="widget rounded">
+        <div class="widget-title">
+            <i class="fas fa-stream text-info fa-fw"></i>
+            Edit user: {{ user.firstname ~ ' ' ~ user.lastname }}
+        </div>
+    </div>
+
+    <div class="mt-2">
+        {{ include('fragments/form/user/_form.html.twig') }}
+    </div>
+{% endblock %}

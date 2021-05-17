@@ -1,0 +1,12 @@
+<div class="notice {% if alertStyle is defined %} {{ alertStyle }} {% else %} notice-info" {% endif %}>
+
+    <i class="fas fa-question-circle fa-fw"></i>
+
+    <strong>{{ message }}</strong>
+
+    {% if walk is not defined %}
+        <span class="float-right">
+            <i class="fas fa-walking fa-fw faa-passing animated text-muted"></i>
+        </span>
+    {% endif %}
+</div>

@@ -1,0 +1,181 @@
+/* h@ck fix for bootstrap tooltip */
+.tooltip-inner {
+    text-align: left;
+}
+
+.gravatar {
+    width: 23px;
+    height: 23px;
+}
+
+#widget-calendar-form {
+    display: none;
+}
+
+.widget {
+    display: block;
+    background: $white;
+    padding: 10px;
+    border: 1px solid $gray;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.widget-title {
+    font-size: 1.3rem;
+    color: $blue;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.widget-title:first-letter {
+    color: #1e8bc3 !important;
+}
+
+.dropdown-item:hover {
+    background: $bgHeader;
+    color: $white !important;
+    -webkit-transition:all .6s ease-in-out;
+    -moz-transition:all .6s ease-in-out;
+    -o-transition:all .6s ease-in-out;
+    -ms-transition:all .6s ease-in-out;
+    transition:all .6s ease-in-out;
+}
+
+.dropdown-item.active {
+    background: $bgHeader;
+}
+
+.dropdown-toggle.bs-placeholder {
+    color: $blue !important;
+}
+
+/* paginator */
+.page-item.active .page-link {
+    background-color: $bgHeader !important;
+    color: $white !important;
+}
+
+.page-link {
+    color: $bgHeader !important;
+}
+
+/* badge */
+.badge-primary {
+    background: $bgHeader !important;
+}
+
+.badge-danger {
+    background: #d91e18 !important;
+}
+
+.badge-dark {
+    background: $black !important;
+}
+
+.badge-warning {
+    background: #f7ca18 !important;
+}
+
+/* modal settings */
+.modal-header {
+    background: $bgHeader;
+    color: $white;
+}
+
+/* counter icon notification */
+.icon-badge {
+    background: red;
+    border-radius: 2px;
+    color: $white;
+    position: absolute;
+    z-index: 99999;
+}
+
+/* custom card */
+.card-img-overlay {
+    padding: 0;
+    top: 5px;
+    left: 7px;
+    height: 30px;
+}
+
+.card-avatar {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    margin-left: -40px;
+    top: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 30, .8)
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    .card-avatar {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 50%;
+        margin-left: -20px;
+        top: 100px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 30, .8);
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen
+and (min-device-width: 1200px)
+and (max-device-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (min-resolution: 192dpi) {
+    .card-avatar {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 50%;
+        margin-left: -20px;
+        top: 85px;
+        border-radius: 50%;
+        border: 2px solid rgba(0, 0, 30, .8);
+    }
+}
+
+/* back to top button */
+.back-to-top {
+    position: fixed;
+    width: 42px;
+    height: 42px;
+    z-index: 1;
+    bottom: 5px;
+    right: 10px;
+    text-decoration: none;
+    color: #282828;
+    background: rgba(68,108,179, .6);
+    font-size: 11px;
+    padding: 1em;
+    color: #fff;
+    border-radius: 2px;
+    display: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.back-to-top:hover {
+    cursor: pointer;
+    border-radius: 0;
+    background: rgba(68,108,179, 1);
+}
+
+.bootstrap-select {
+    z-index: inherit !important;
+}
+
