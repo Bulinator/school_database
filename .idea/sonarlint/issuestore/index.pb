@@ -23,3 +23,63 @@ I
 config/packages/twig.yaml,8\a\8a5c55d47e428b829ef7645f00a0b768cef8a5bf
 C
 assets/bootstrap.js,0\3\03141036569b5869397180192f8b98c1360e1556
+N
+assets/scss/_styles/_form.scss,5\a\5a5e9317934936b633faaf896c3ded63163af816
+^
+.templates/fragments/message/_message.html.twig,5\0\50766fdaf220367d69d6de2042f3b213be4dd9a5
+b
+2templates/fragments/message/flash/_alert.html.twig,a\2\a294d9021de5d85958ad760de61214a82ff6a837
+a
+1templates/fragments/form/category/_form.html.twig,d\5\d511403c8163f5616b949b30c54bd43e706cb395
+Q
+!templates/category/edit.html.twig,c\2\c2d1f04acfef9bb3dc94b1d3a51855df070faafd
+P
+ templates/category/add.html.twig,e\d\ed93d208e5dff3abc2218d2ea4be77eff54b4eaa
+O
+templates/lecture/add.html.twig,3\1\319ae7599a037f6705ed91260d43ddd97ffc6a0a
+A
+webpack.config.js,d\5\d5595158cc48f9bf3e51b06f6e6805a8fd2d6262
+J
+assets/js/lib/datatable.js,3\3\33345a96653f2f7db6a3d1094755333958f16118
+O
+assets/scss/_styles/_table.scss,f\2\f2636525e829cc784e7a2afb277bdb6e3d409d34
+R
+"templates/category/index.html.twig,b\a\baa494c81f80fca7f47d5bca464dcffbeaddc66c
+P
+ templates/lecture/edit.html.twig,e\7\e772426c572654739f355fa0eef158c8664b7be5
+I
+src/Form/CategoryType.php,5\f\5f8bf657e67f620e181ffa4f3acf86be6ac5fa33
+G
+src/Entity/Category.php,c\8\c85245800948ffb0569f65af912d0e2d467f18f3
+`
+0templates/fragments/form/lecture/_form.html.twig,7\f\7f9acd5b8e05a4192cf14552beb1c3cb09c61fde
+U
+%src/Controller/CategoryController.php,7\3\73d80620e1fbae6d9bcb8a83110ed4045d319d16
+T
+$src/Controller/LectureController.php,2\a\2a9c1f75daa1c392796e5327f90d3b225bbf8d1b
+Q
+!src/Controller/UserController.php,8\7\87b99206717ccce222f05190f36b6273e3ea6228
+M
+templates/user/edit.html.twig,5\f\5ffff80b6da656e78261bf85eddb09fec0c7a56c
+T
+$src/Repository/LectureRepository.php,2\7\27ebc0108624098c1a2c3a0c34c0396ae50ed2da
+H
+src/Form/LectureType.php,3\0\30677b546d141b88bd6ec3be8e358bab4bf6d97e
+<
+package.json,7\0\7030d0b2f71b999ff89a343de08c414af32fc93a
+L
+templates/user/add.html.twig,3\9\39759208098725474738bd5c727537a5402b6229
+@
+assets/js/app.js,a\1\a100a8b5c188567ddcb647c9e579d4f07284fe87
+]
+-templates/fragments/form/user/_form.html.twig,2\d\2dd636c3e4751664d62b733c296d90cc3b0d65eb
+F
+assets/js/lib/utils.js,3\c\3ce3ba67cc7793168701dc6cc7fed3eeb53d61db
+P
+ assets/scss/_styles/_widget.scss,c\1\c1af40e9f00b16d539a11cd45b022d7af26463e5
+D
+assets/scss/app.scss,a\1\a1a158b73b289af82516cd3d7863c0ae06c6759a
+H
+templates/base.html.twig,f\f\ffb3f1cfd73fdec1f0c80c63d0b5bbc1fff22022
+E
+src/Form/UserType.php,6\c\6c2442a67dda9c3193b965c65ce788acf9b5ecaf

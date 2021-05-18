@@ -18,6 +18,12 @@ Create database
 php bin/console doctrine:database:create
 ```
 
+Deploy database
+
+```bash
+php bin/console doctrine:migrations:migrate
+```
+
 Install the dependencies
 ```bash
 composer install
